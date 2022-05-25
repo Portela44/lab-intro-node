@@ -50,7 +50,13 @@ class SortedList {
     }
   }
 
-  sum() {}
+  sum() {
+    let totalSum = 0;
+    for(let i = 0; i < this.length; i++) {
+      totalSum = totalSum + this.items[i];
+    }
+    return totalSum;
+  }
 
   avg() {}
 }
