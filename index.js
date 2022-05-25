@@ -43,7 +43,11 @@ class SortedList {
   }
 
   min() {
-
+    if(this.length === 0) {
+      throw new Error('EmptySortedList');
+    } else {
+      return this.items[0];
+    }
   }
 
   sum() {}
